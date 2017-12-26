@@ -1,5 +1,5 @@
 var gulp = require('gulp'),
-    prettyError = require('gulp-prettyerror'),
+    // prettyError = require('gulp-prettyerror'),
     sass = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps'),
     autoprefixer = require('gulp-autoprefixer'),
@@ -49,7 +49,7 @@ gulp.task('browser-sync', function () {
     ];
 
     browserSync.init(files, {
-        proxy: 'localhost[:port-here]/[your-dir-name-here]',
+        proxy: 'localhost:8888/portfolio',
     });
 
     gulp.watch(files).on('change', browserSync.reload);

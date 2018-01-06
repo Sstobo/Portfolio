@@ -666,3 +666,143 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.background {
+  background: #211a84;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #211a84 0%, #2239b7 39%, #591ebf 64%, #c90c44 89%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#211a84', endColorstr='#c90c44',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  height: 4608px; }
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 100vh); }
+
+.page1 {
+  border: 1px solid grey;
+  grid-row: 1/2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .page1 .header {
+    width: 100%;
+    height: 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background-color: pink; }
+    .page1 .header .logo {
+      width: 70%;
+      height: 100%;
+      background-color: white; }
+    .page1 .header .menu {
+      width: 30%;
+      background-color: goldenrod; }
+  .page1 .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 10%;
+    width: 100%;
+    height: 50%;
+    background-color: white; }
+
+.page2 {
+  border: 1px solid grey;
+  grid-row: 2/3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+  .page2 .white-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 98%;
+    width: 98%;
+    margin: 0 auto;
+    background-color: white; }
+    .page2 .white-box .pic {
+      width: 35%;
+      height: 80%;
+      background-color: pink;
+      margin-top: 6%;
+      position: relative;
+      right: 4%; }
+    .page2 .white-box .about-me {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      width: 60%;
+      height: 80%;
+      margin-top: 6%;
+      background-color: gold; }
+      .page2 .white-box .about-me .about-me-intro {
+        width: 100%;
+        height: 40%;
+        background: lightblue; }
+      .page2 .white-box .about-me .about-left {
+        width: 50%;
+        height: 60%;
+        background: lightcoral; }
+      .page2 .white-box .about-me .about-right {
+        width: 50%;
+        height: 60%;
+        background: blue; }
+
+.page3 {
+  border: 1px solid grey;
+  grid-row: 3/4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+  .page3 .my-work {
+    width: 30%;
+    height: 75%;
+    background: white;
+    margin-top: 4%; }
+  .page3 .my-work-pics {
+    width: 70%;
+    height: 75%;
+    background: grey;
+    margin-top: 4%; }
+
+.page4 .what-im-about {
+  border: 1px solid grey;
+  grid-row: 4/5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }

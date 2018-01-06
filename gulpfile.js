@@ -1,5 +1,5 @@
 var gulp = require('gulp'),
-    // prettyError = require('gulp-prettyerror'),
+    prettyError = require('gulp-prettyerror'),
     sass = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps'),
     autoprefixer = require('gulp-autoprefixer'),

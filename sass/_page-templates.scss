@@ -3,3 +3,122 @@
 --------------------------------------------------------------*/
 
 /* Front page */
+.background {
+    background: #211a84; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #211a84 0%, #2239b7 39%, #591ebf 64%, #c90c44 89%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #211a84 0%,#2239b7 39%,#591ebf 64%,#c90c44 89%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #211a84 0%,#2239b7 39%,#591ebf 64%,#c90c44 89%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#211a84', endColorstr='#c90c44',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    height: 4608px;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 100vh);
+}
+
+
+.page1 {
+  border: 1px solid grey;
+  grid-row: 1/2;
+  display: flex;
+  flex-direction: column;
+    .header{
+      width: 100%;
+      height: 10%;
+      display: flex;
+      flex-direction: row;
+      background-color: pink;
+      .logo {
+        width: 70%;
+        height: 100%;
+        background-color: white;
+      }
+      .menu {
+        width: 30%;
+        background-color: goldenrod;
+      }
+    }
+    .title {
+      display: flex;
+      margin-top: 10%;
+      width: 100%;
+      height: 50%;
+      background-color: white;
+    }
+  }
+
+.page2 {
+  border: 1px solid grey;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: row;
+    .white-box {
+      display: flex;
+      flex-direction: row;
+      height: 98%;
+      width: 98%;
+      margin: 0 auto;
+      background-color: white;
+      .pic {
+        width: 35%;
+        height: 80%;
+        background-color: pink;
+        margin-top: 6%;
+        position: relative;
+        right: 4%;
+      }
+      .about-me {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 60%;
+        height: 80%;
+        margin-top: 6%;
+        background-color: gold;
+        .about-me-intro {
+          width: 100%;
+          height: 40%;
+          background: lightblue;
+        }
+        .about-left {
+          width: 50%;
+          height: 60%;
+          background: lightcoral;
+        }
+        .about-right {
+          width: 50%;
+          height: 60%;
+          background:blue;
+        }
+      }
+    }
+  }
+
+.page3 {
+    border: 1px solid grey;
+    grid-row: 3/4;
+    display: flex;
+    flex-direction: row;
+      .my-work {
+        width: 30%;
+        height: 75%;
+        background: white;
+        margin-top: 4%;
+      }
+      .my-work-pics {
+        width: 70%;
+        height: 75%;
+        background: grey;
+        margin-top: 4%;
+      }
+  }
+
+.page4 {
+  .what-im-about {
+    border: 1px solid grey;
+    grid-row: 4/5;
+    display: flex;
+    flex-direction: row;
+  }
+}

@@ -38,6 +38,7 @@ get_header(); ?>
 
 				<div class="page4">
 					<div class="what-im-about">
+						<div class="what-title"></div>
 						<div class="what-left"></div>
 						<div class="what-right"></div>
 					</div>
@@ -49,13 +50,17 @@ get_header(); ?>
 				</div>
 
 				<div class="page5">
+					<div class="education-wrapper">
 					<div class="education-left"></div>
 					<div class="education-right"></div>
+					</div>
 				</div>
 
 				<div class="page6">
+					<div class="contact-wrap">
 					<div class="contact-me"></div>
 					<div class="contact-form"></div>
+					</div>
 				</div>
 
 		</div>

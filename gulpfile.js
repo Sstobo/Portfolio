@@ -6,7 +6,7 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     cssnano = require('gulp-cssnano'),
     uglify = require('gulp-uglify'),
-    eslint = require('gulp-eslint'),
+    // eslint = require('gulp-eslint'),
     browserSync = require('browser-sync');
 
 gulp.task('sass', function () {
@@ -24,7 +24,7 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('./build/css'));
 });
 
-gulp.task('scripts', ['lint'], function () {
+gulp.task('scripts', function () {
     gulp.src('./js/*.js')
         .pipe(uglify())
         .pipe(rename({
@@ -33,12 +33,12 @@ gulp.task('scripts', ['lint'], function () {
         .pipe(gulp.dest('./build/js'))
 });
 
-gulp.task('lint', function () {
-    return gulp.src(['./js/*.js'])
-        .pipe(eslint())
-        .pipe(eslint.format())
-        .pipe(eslint.failAfterError());
-});
+// gulp.task('lint', function () {
+//     return gulp.src(['./js/*.js'])
+//         .pipe(eslint())
+//         .pipe(eslint.format())
+//         .pipe(eslint.failAfterError());
+// });
 
 gulp.task('browser-sync', function () {
     var files = [

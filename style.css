@@ -706,13 +706,25 @@ object {
       width: 30%;
       background-color: goldenrod; }
   .page1 .title {
+    color: white;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-top: 10%;
     width: 100%;
     height: 50%;
-    background-color: white; }
+    padding-left: 6%; }
+    .page1 .title p {
+      margin: 0; }
+    .page1 .title h1 {
+      margin: 0;
+      letter-spacing: 8px;
+      margin-bottom: 24px;
+      font-size: 118px; }
 
 .page2 {
   border: 1px solid grey;
@@ -759,16 +771,51 @@ object {
       background-color: gold; }
       .page2 .white-box .about-me .about-me-intro {
         width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         height: 40%;
         background: lightblue; }
+        .page2 .white-box .about-me .about-me-intro h2 {
+          letter-spacing: 4px;
+          text-transform: uppercase;
+          margin: 0;
+          color: black;
+          font-size: 48px; }
+        .page2 .white-box .about-me .about-me-intro h3 {
+          text-transform: uppercase;
+          letter-spacing: 2px; }
+        .page2 .white-box .about-me .about-me-intro p {
+          margin: 0; }
       .page2 .white-box .about-me .about-left {
         width: 50%;
         height: 60%;
         background: lightcoral; }
+        .page2 .white-box .about-me .about-left p {
+          padding-left: 24px;
+          font-size: 18px;
+          text-transform: uppercase; }
+        .page2 .white-box .about-me .about-left ul {
+          padding: 0; }
+        .page2 .white-box .about-me .about-left li {
+          font-size: 18px;
+          list-style: square; }
       .page2 .white-box .about-me .about-right {
         width: 50%;
         height: 60%;
         background: blue; }
+        .page2 .white-box .about-me .about-right p {
+          text-transform: uppercase; }
+        .page2 .white-box .about-me .about-right ul {
+          padding: 0; }
+        .page2 .white-box .about-me .about-right li {
+          font-size: 18px;
+          margin: 0;
+          list-style: square; }
 
 .page3 {
   border: 1px solid grey;

@@ -665,6 +665,20 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+p {
+  letter-spacing: 2px;
+  font-size: 16px;
+  font-weight: 100; }
+
+h2 {
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  font-size: 48px; }
+
+h3 {
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+
 .wrapper {
   display: grid;
   grid-template-columns: 1fr;
@@ -887,12 +901,60 @@ object {
       -ms-flex-direction: row;
           flex-direction: row; }
   .page3 .my-work {
-    width: 30%;
+    width: 40%;
     height: 75%;
-    background: white;
-    margin-top: 4%; }
+    margin-top: 4%;
+    padding-top: 8%;
+    padding-left: 6%;
+    color: white; }
+    .page3 .my-work h2 {
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-size: 48px;
+      margin-bottom: 24px; }
+    .page3 .my-work h4 {
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      margin-bottom: 44px; }
+    .page3 .my-work p {
+      width: 80%;
+      line-height: 28px;
+      font-size: 14px; }
+    .page3 .my-work .view-site-button {
+      border-radius: 0;
+      border: none;
+      padding: 8px;
+      background-color: white;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      text-shadow: none;
+      width: 124px;
+      text-transform: uppercase;
+      margin-top: 34px;
+      margin-bottom: 44px;
+      color: red; }
+    .page3 .my-work .view-site-button:hover {
+      -webkit-box-shadow: 2px 2px 5px grey;
+              box-shadow: 2px 2px 5px grey;
+      position: relative;
+      bottom: 2px;
+      right: 2px; }
+    .page3 .my-work .prev-button, .page3 .my-work .next-button {
+      border-radius: 0;
+      border: none;
+      padding: 8px;
+      background-color: rgba(255, 255, 255, 0);
+      color: white;
+      font-size: 14px;
+      font-weight: 100;
+      letter-spacing: 3px;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      text-shadow: none;
+      text-transform: uppercase;
+      margin-bottom: 12px; }
   .page3 .my-work-pics {
-    width: 70%;
+    width: 60%;
     height: 75%;
     background: grey;
     margin-top: 4%; }
@@ -908,10 +970,12 @@ object {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
-          flex-direction: row; }
+          flex-direction: row;
+  color: white; }
   .page4 .what-im-about {
-    height: 40%;
+    height: 30%;
     width: 100%;
+    margin-top: 44px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -921,23 +985,32 @@ object {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    background: gold; }
+    padding-left: 12%; }
+    .page4 .what-im-about h2 {
+      letter-spacing: 6px;
+      text-transform: uppercase;
+      font-size: 48px; }
   .page4 .what-title {
     height: 30%;
     width: 100%;
-    background: lightgreen; }
+    padding-left: 44px;
+    margin-bottom: 48px; }
   .page4 .what-left {
     width: 50%;
     height: 70%;
-    background: grey; }
+    padding-left: 44px; }
+    .page4 .what-left p {
+      letter-spacing: 2px;
+      width: 70%; }
   .page4 .what-right {
     width: 50%;
-    height: 70%;
-    background: white; }
+    height: 70%; }
+    .page4 .what-right p {
+      width: 70%;
+      letter-spacing: 2px; }
   .page4 .what-cards {
     width: 100%;
     height: 50%;
-    background: pink;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -951,20 +1024,134 @@ object {
     -ms-flex-pack: distribute;
         justify-content: space-around; }
     .page4 .what-cards .card1 {
-      width: 30%;
+      -webkit-transition: .5s;
+      transition: .5s;
+      padding: 24px 44px 24px 44px;
+      width: 24%;
       height: 98%;
-      background: white; }
+      border: 1px solid white;
+      opacity: .7;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .page4 .what-cards .card1 .card1-image {
+        height: 25%;
+        width: 28%; }
+        .page4 .what-cards .card1 .card1-image .image-white {
+          display: block; }
+        .page4 .what-cards .card1 .card1-image .image-black {
+          display: none; }
+    .page4 .what-cards .card1:hover {
+      -webkit-transition: .5s;
+      transition: .5s;
+      background-color: white;
+      position: relative;
+      bottom: 2%;
+      color: black;
+      opacity: .8;
+      -webkit-box-shadow: 4px 4px 4px rgba(175, 193, 199, 0.4);
+              box-shadow: 4px 4px 4px rgba(175, 193, 199, 0.4); }
+      .page4 .what-cards .card1:hover .image-white {
+        display: none; }
+      .page4 .what-cards .card1:hover .image-black {
+        display: block; }
     .page4 .what-cards .card2 {
-      width: 30%;
+      -webkit-transition: .5s;
+      transition: .5s;
+      padding: 24px 44px 24px 44px;
+      width: 24%;
       height: 98%;
-      background: white; }
+      border: 1px solid white;
+      opacity: .7;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .page4 .what-cards .card2 .card2-image {
+        height: 25%;
+        width: 28%; }
+        .page4 .what-cards .card2 .card2-image .image-white {
+          display: block; }
+        .page4 .what-cards .card2 .card2-image .image-black {
+          display: none; }
+    .page4 .what-cards .card2:hover {
+      -webkit-transition: .5s;
+      transition: .5s;
+      background-color: white;
+      position: relative;
+      bottom: 2%;
+      color: black;
+      opacity: .8;
+      -webkit-box-shadow: 4px 4px 4px rgba(175, 193, 199, 0.4);
+              box-shadow: 4px 4px 4px rgba(175, 193, 199, 0.4); }
+      .page4 .what-cards .card2:hover .image-white {
+        display: none; }
+      .page4 .what-cards .card2:hover .image-black {
+        display: block; }
     .page4 .what-cards .card3 {
-      width: 30%;
+      -webkit-transition: .5s;
+      transition: .5s;
+      padding: 24px 44px 24px 44px;
+      width: 24%;
       height: 98%;
-      background: white; }
+      border: 1px solid white;
+      opacity: .7;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .page4 .what-cards .card3 .card3-image {
+        height: 25%;
+        width: 28%; }
+        .page4 .what-cards .card3 .card3-image .image-white {
+          display: block; }
+        .page4 .what-cards .card3 .card3-image .image-black {
+          display: none; }
+    .page4 .what-cards .card3:hover {
+      -webkit-transition: .5s;
+      transition: .5s;
+      background-color: white;
+      position: relative;
+      bottom: 2%;
+      color: black;
+      opacity: .8;
+      -webkit-box-shadow: 4px 4px 4px rgba(175, 193, 199, 0.4);
+              box-shadow: 4px 4px 4px rgba(175, 193, 199, 0.4); }
+      .page4 .what-cards .card3:hover .image-white {
+        display: none; }
+      .page4 .what-cards .card3:hover .image-black {
+        display: block; }
 
 .page5 {
-  border: 1px solid grey;
+  color: white;
   grid-row: 5/6;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -994,12 +1181,28 @@ object {
             flex-direction: row; }
     .page5 .education-wrapper .education-left {
       width: 50%;
-      height: 100%;
-      background: lightsalmon; }
+      height: 100%; }
+      .page5 .education-wrapper .education-left p {
+        width: 70%; }
     .page5 .education-wrapper .education-right {
+      border: 1px solid rgba(233, 233, 233, 0.4);
       width: 50%;
       height: 100%;
-      background: lightseagreen; }
+      padding: 48px; }
+      .page5 .education-wrapper .education-right ul {
+        padding: 0;
+        margin: 0; }
+      .page5 .education-wrapper .education-right li {
+        font-size: 13px;
+        margin: 0;
+        margin-bottom: 14px;
+        list-style: none; }
+      .page5 .education-wrapper .education-right ul li::before {
+        color: red;
+        content: "-";
+        padding-right: 1.1225em;
+        position: relative;
+        top: 0em; }
 
 .page6 {
   border: 1px solid grey;
@@ -1029,13 +1232,47 @@ object {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column;
-    background: blanchedalmond; }
+            flex-direction: column; }
     .page6 .contact-wrap .contact-me {
       height: 50%;
-      width: 100%;
-      background: lightgreen; }
+      width: 100%; }
     .page6 .contact-wrap .contact-form {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
       height: 50%;
-      width: 100%;
-      background: purple; }
+      width: 100%; }
+      .page6 .contact-wrap .contact-form p {
+        color: white;
+        display: inline-block;
+        width: 30%;
+        margin-right: 24px;
+        opacity: .7; }
+      .page6 .contact-wrap .contact-form .wpcf7-textarea {
+        width: 90%;
+        height: 100px; }
+      .page6 .contact-wrap .contact-form .wpcf7-submit {
+        border-radius: 0;
+        border: none;
+        padding: 8px;
+        background-color: white;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        text-shadow: none;
+        width: 124px;
+        text-transform: uppercase;
+        margin-top: 34px;
+        margin-bottom: 44px;
+        position: relative;
+        bottom: 12px;
+        color: red; }
+      .page6 .contact-wrap .contact-form .wpcf7-submit:hover {
+        -webkit-box-shadow: 2px 2px 5px grey;
+                box-shadow: 2px 2px 5px grey;
+        position: relative;
+        bottom: 2px;
+        right: 2px; }

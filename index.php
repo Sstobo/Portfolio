@@ -27,7 +27,11 @@ get_header(); ?>
 
 				<div class="page2">
 					<div class="white-box">
-						<div class="pic"></div>
+						<div class="pic">
+							
+						<div class="profile-image"></div>
+							<div class="profile-image-box"></div>
+						</div>
 						<div class="about-me">
 							<div class="about-me-intro">
 								<h2> About Me </h2>
@@ -37,15 +41,16 @@ get_header(); ?>
 							<div class="about-left">
 								<p> Programming Proficiencys </p>
 								<ul> 
+									<li> React </li>
 									<li> HTML </li>
 									<li> CSS </li>
 									<li> Javascript </li>
 									<li> Jquery </li>
-									<li> React </li>
 									<li> Python </li>
 									<li> PHP </li>
 									<li> Sass/Gulp </li>
 								</ul>
+								<button> Lets Talk</button>
 							</div>
 							<div class="about-right">
 								<p> What I do </p>

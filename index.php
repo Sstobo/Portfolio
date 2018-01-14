@@ -63,13 +63,19 @@ get_header(); ?>
 
 				
 				<div class="page3">
-					<div class="my-work"></div>
+					<div class="my-work">
+					<h2> My Work </h2>
+					<h4> Place Holder </h4>
+					
+					</div>
 					<div class="my-work-pics"></div>
 				</div>
 
 				<div class="page4">
 					<div class="what-im-about">
-						<div class="what-title"></div>
+						<div class="what-title">
+						
+						</div>
 						<div class="what-left"></div>
 						<div class="what-right"></div>
 					</div>

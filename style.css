@@ -683,37 +683,14 @@ h3 {
   display: grid;
   min-width: 1040px;
   grid-template-columns: 1fr;
-<<<<<<< HEAD
-  grid-template-rows: repeat(6, 100vh);
-  background: #120b3a;
-=======
   grid-template-rows: repeat(6, 900px);
   background: #211a84;
->>>>>>> 8ec97521d2e8283e1962bb8935f22887afebb49b
   /* Old browsers */
   /* FF3.6-15 */
   /* Chrome10-25,Safari5.1-6 */
-  background: -webkit-gradient(linear, left top, left bottom, from(#120b3a), color-stop(22%, #101a54), color-stop(43%, #4c199e), color-stop(52%, #671baa), color-stop(60%, #6e1ea0), color-stop(60%, #6e1ea0), color-stop(79%, #a01e1e), color-stop(97%, #a01e1e));
-  background: linear-gradient(to bottom, #120b3a 0%, #101a54 22%, #4c199e 43%, #671baa 52%, #6e1ea0 60%, #6e1ea0 60%, #a01e1e 79%, #a01e1e 97%);
+  background: linear-gradient(135deg, #211a84 0%, #2239b7 39%, #591ebf 64%, #c90c44 89%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#120b3a', endColorstr='#a01e1e',GradientType=0 );
-  /* IE6-9 */ }
-
-.title-button {
-  border-radius: 0;
-  border: 1px solid white;
-  padding: 8px;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  text-shadow: none;
-  color: red;
-  width: 124px;
-  text-transform: uppercase;
-  margin-top: 34px;
-  position: relative;
-  background-color: white !important;
-  -webkit-box-shadow: 0px 0px 5px #fff;
-          box-shadow: 0px 0px 5px #fff; }
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#211a84', endColorstr='#c90c44',GradientType=1 ); }
 
 .title-button:hover {
   color: red;
@@ -824,11 +801,7 @@ h3 {
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
               flex-direction: row;
-<<<<<<< HEAD
-      width: 60%;
-=======
       width: 50%;
->>>>>>> 8ec97521d2e8283e1962bb8935f22887afebb49b
       height: 80%;
       margin-top: 6%;
       margin-left: 8%; }
@@ -901,12 +874,8 @@ h3 {
         width: 60%;
         height: 60%; }
         .page2 .white-box .about-me .about-right p {
-<<<<<<< HEAD
-          padding-left: 4%;
-=======
           font-size: 18px;
           padding-left: 8%;
->>>>>>> 8ec97521d2e8283e1962bb8935f22887afebb49b
           font-weight: bold;
           text-transform: uppercase; }
         .page2 .white-box .about-me .about-right ul {

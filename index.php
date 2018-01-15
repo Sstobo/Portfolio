@@ -39,7 +39,7 @@ get_header(); ?>
 								
 							</div>
 							<div class="about-left">
-								<p> Programming Proficiencys </p>
+								<p> Proficiencys </p>
 								<ul> 
 									<li> React </li>
 									<li> HTML </li>
@@ -55,7 +55,7 @@ get_header(); ?>
 							<div class="about-right">
 								<p> What I do </p>
 								<ul> 
-									<li>Create immersive web experiences </li>
+									<li> Create immersive web experiences </li>
 									<li> App development for Android and iOS</li>
 									<li> Wordpress web development </li>
 									<li> Work collaborativly in a team environment </li>

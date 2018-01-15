@@ -19,6 +19,7 @@ h3 {
   display: grid;
   min-width: 1040px;
   grid-template-columns: 1fr;
+<<<<<<< HEAD
   grid-template-rows: repeat(6, 100vh);
   background: #120b3a; /* Old browsers */
   background: -moz-linear-gradient(top, #120b3a 0%, #101a54 22%, #4c199e 43%, #671baa 52%, #6e1ea0 60%, #6e1ea0 60%, #a01e1e 79%, #a01e1e 97%); /* FF3.6-15 */
@@ -41,6 +42,14 @@ h3 {
   background-color: white !important;
   box-shadow: 0px 0px 5px #fff;
   
+=======
+  grid-template-rows: repeat(6, 900px);
+  background: #211a84; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #211a84 0%, #2239b7 39%, #591ebf 64%, #c90c44 89%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #211a84 0%,#2239b7 39%,#591ebf 64%,#c90c44 89%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #211a84 0%,#2239b7 39%,#591ebf 64%,#c90c44 89%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#211a84', endColorstr='#c90c44',GradientType=1 );
+>>>>>>> 8ec97521d2e8283e1962bb8935f22887afebb49b
 }
 .title-button:hover {
   color: red;
@@ -134,7 +143,11 @@ h3 {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
+<<<<<<< HEAD
         width: 60%;
+=======
+        width: 50%;
+>>>>>>> 8ec97521d2e8283e1962bb8935f22887afebb49b
         height: 80%;
         margin-top: 6%;
         margin-left: 8%;
@@ -155,6 +168,7 @@ h3 {
           h3 {
             text-transform: uppercase;
             letter-spacing: 2px;
+           
           }
           p {
             font-weight: bold;
@@ -213,10 +227,15 @@ h3 {
           width: 60%;
           height: 60%;
           p {
+<<<<<<< HEAD
             padding-left: 4%;
+=======
+            font-size: 18px;
+            padding-left: 8%;
+>>>>>>> 8ec97521d2e8283e1962bb8935f22887afebb49b
             font-weight: bold;
             text-transform: uppercase;
-            margin-bottom: 12%;
+            
           }
           ul {
             padding: 0;

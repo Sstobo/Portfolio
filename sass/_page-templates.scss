@@ -2,14 +2,14 @@
 # Page Templates
 --------------------------------------------------------------*/
 p {
-  letter-spacing: 2px;
-  font-size: 16px;
+  letter-spacing: 1px;
+  font-size: 14px;
   font-weight: 100;
 }
 h2 {
   letter-spacing: 6px;
   text-transform: uppercase;
-  font-size: 48px;
+  font-size: 38px;
 }
 h3 {
   text-transform: uppercase;
@@ -17,14 +17,37 @@ h3 {
 } 
 .wrapper {
   display: grid;
+  min-width: 1040px;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 100vh);
-  background: #211a84; /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #211a84 0%, #2239b7 39%, #591ebf 64%, #c90c44 89%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #211a84 0%,#2239b7 39%,#591ebf 64%,#c90c44 89%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #211a84 0%,#2239b7 39%,#591ebf 64%,#c90c44 89%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#211a84', endColorstr='#c90c44',GradientType=1 );
+  background: #120b3a; /* Old browsers */
+  background: -moz-linear-gradient(top, #120b3a 0%, #101a54 22%, #4c199e 43%, #671baa 52%, #6e1ea0 60%, #6e1ea0 60%, #a01e1e 79%, #a01e1e 97%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #120b3a 0%,#101a54 22%,#4c199e 43%,#671baa 52%,#6e1ea0 60%,#6e1ea0 60%,#a01e1e 79%,#a01e1e 97%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #120b3a 0%,#101a54 22%,#4c199e 43%,#671baa 52%,#6e1ea0 60%,#6e1ea0 60%,#a01e1e 79%,#a01e1e 97%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#120b3a', endColorstr='#a01e1e',GradientType=0 ); /* IE6-9 */
 }
+
+.title-button {
+  border-radius: 0;
+  border: 1px solid white;;
+  padding: 8px;
+  box-shadow: none;
+  text-shadow: none;
+  color: red;
+  width: 124px;
+  text-transform: uppercase;
+  margin-top: 34px;
+  position: relative;
+  background-color: white !important;
+  box-shadow: 0px 0px 5px #fff;
+  
+}
+.title-button:hover {
+  color: red;
+  background-color: white !important;
+ 
+}
+
 
 
 .page1 {
@@ -111,7 +134,7 @@ h3 {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        width: 40%;
+        width: 60%;
         height: 80%;
         margin-top: 6%;
         margin-left: 8%;
@@ -157,7 +180,7 @@ h3 {
             margin: 0;
           }
           li {
-            font-size: 18px;  
+            font-size: 14px;  
             list-style: none; 
           }
           ul li::before {
@@ -173,25 +196,24 @@ h3 {
           border: none;
           padding: 8px;
           background-color: rgb(22, 5, 85);
-          box-shadow: none;
+         
           text-shadow: none;
           width: 124px;
           text-transform: uppercase;
           margin-top: 34px;
           color: white;
+          box-shadow: 0px 0px 5px rgb(22, 5, 85);
         }
         button:hover {
-          box-shadow: 2px 2px 5px grey;
+          box-shadow: none;
           position: relative;
-          bottom: 2px;
-          right: 2px;
         }
       }
         .about-right {
           width: 60%;
           height: 60%;
           p {
-            padding-left: 8%;
+            padding-left: 4%;
             font-weight: bold;
             text-transform: uppercase;
             margin-bottom: 12%;
@@ -201,7 +223,7 @@ h3 {
             margin: 0;
           }
           li {
-            font-size: 18px;
+            font-size: 14px;
             margin: 0;
             list-style: none;
           }
@@ -258,12 +280,12 @@ h3 {
           margin-top: 34px;
           margin-bottom: 44px;
           color: red;
+          box-shadow: 0px 0px 5px #fff;
         }
         .view-site-button:hover {
-          box-shadow: 2px 2px 5px grey;
-          position: relative;
-          bottom: 2px;
-          right: 2px;
+          
+          box-shadow: none;
+          color: red;
         }
         .prev-button, .next-button {
           border-radius: 0;
@@ -322,16 +344,17 @@ h3 {
     height: 70%;
     padding-left: 44px;
     p {
-      letter-spacing: 2px;
-      width: 70%;
+      letter-spacing: 1px;
+      width: 80%;
     }
   }
   .what-right {
     width: 50%;
     height: 70%;
     p {
-      width: 70%;
-      letter-spacing: 2px;
+      
+      width: 80%;
+      letter-spacing: 1px;
     }
   }
   .what-cards {
@@ -343,8 +366,8 @@ h3 {
     justify-content: space-around;
     .card1 {
       transition: .5s;
-      padding: 24px 44px 24px 44px;
-      width: 24%;
+      padding: 24px 24px 24px 24px;
+      width: 30%;
       height: 98%;
       border: 1px solid white;
       opacity: .7;
@@ -352,6 +375,9 @@ h3 {
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      p {
+        font-size: 14px;
+      }
       .card1-image {
         height: 25%;
         width: 28%;
@@ -495,7 +521,6 @@ h3 {
     ul li::before {
       color: red;  
       content: "-"; 
-      
       padding-right: 1.1225em;  
       position: relative;
       top: 0em; 
@@ -513,7 +538,7 @@ h3 {
   align-items: center;
   .contact-wrap {
     height: 70%;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -521,19 +546,40 @@ h3 {
     .contact-me {
       height: 50%;
       width: 100%;
+      color: white;
+      padding-left: 44px;
+      a {
+        color: white;
+        text-decoration: none;
+        text-shadow: 1px 1px 1px blue;
+      }
+      a:hover {
+        color: rgba(0, 68, 255, 0.63);
+        text-decoration: none;
+        text-shadow: 2px 2px 2px blue;
+      }
+    }
+    .contact-box {
+      position: absolute;
+      top: 560%;
+      opacity: .4;
+      border: 1px solid white;
+      height: 40%;
+      width: 100%;
     }
     .contact-form {
       display: flex;
       flex-direction: row;
       height: 50%;
-      width: 100%;
-  
+      width: 90%;
+      padding: 34px;
+      padding-left: 44px;
       p{
         color: white;
         display: inline-block;
         width: 30%;
         margin-right: 24px;
-        opacity: .7;
+        opacity: .8;
       }
       .wpcf7-textarea {
         width: 90%;
@@ -557,7 +603,7 @@ h3 {
         .wpcf7-submit:hover {
           box-shadow: 2px 2px 5px grey;
           position: relative;
-          bottom: 2px;
+          bottom: 14px;
           right: 2px;
         }
       }

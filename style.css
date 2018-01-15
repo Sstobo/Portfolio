@@ -666,14 +666,14 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 p {
-  letter-spacing: 2px;
-  font-size: 16px;
+  letter-spacing: 1px;
+  font-size: 14px;
   font-weight: 100; }
 
 h2 {
   letter-spacing: 6px;
   text-transform: uppercase;
-  font-size: 48px; }
+  font-size: 38px; }
 
 h3 {
   text-transform: uppercase;
@@ -681,15 +681,38 @@ h3 {
 
 .wrapper {
   display: grid;
+  min-width: 1040px;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 100vh);
-  background: #211a84;
+  background: #120b3a;
   /* Old browsers */
   /* FF3.6-15 */
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #211a84 0%, #2239b7 39%, #591ebf 64%, #c90c44 89%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#120b3a), color-stop(22%, #101a54), color-stop(43%, #4c199e), color-stop(52%, #671baa), color-stop(60%, #6e1ea0), color-stop(60%, #6e1ea0), color-stop(79%, #a01e1e), color-stop(97%, #a01e1e));
+  background: linear-gradient(to bottom, #120b3a 0%, #101a54 22%, #4c199e 43%, #671baa 52%, #6e1ea0 60%, #6e1ea0 60%, #a01e1e 79%, #a01e1e 97%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#211a84', endColorstr='#c90c44',GradientType=1 ); }
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#120b3a', endColorstr='#a01e1e',GradientType=0 );
+  /* IE6-9 */ }
+
+.title-button {
+  border-radius: 0;
+  border: 1px solid white;
+  padding: 8px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none;
+  color: red;
+  width: 124px;
+  text-transform: uppercase;
+  margin-top: 34px;
+  position: relative;
+  background-color: white !important;
+  -webkit-box-shadow: 0px 0px 5px #fff;
+          box-shadow: 0px 0px 5px #fff; }
+
+.title-button:hover {
+  color: red;
+  background-color: white !important; }
 
 .page1 {
   border: 1px solid grey;
@@ -796,7 +819,7 @@ h3 {
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
               flex-direction: row;
-      width: 40%;
+      width: 60%;
       height: 80%;
       margin-top: 6%;
       margin-left: 8%; }
@@ -840,7 +863,7 @@ h3 {
           padding: 0;
           margin: 0; }
         .page2 .white-box .about-me .about-left li {
-          font-size: 18px;
+          font-size: 14px;
           list-style: none; }
         .page2 .white-box .about-me .about-left ul li::before {
           color: red;
@@ -854,24 +877,22 @@ h3 {
           border: none;
           padding: 8px;
           background-color: #160555;
-          -webkit-box-shadow: none;
-                  box-shadow: none;
           text-shadow: none;
           width: 124px;
           text-transform: uppercase;
           margin-top: 34px;
-          color: white; }
+          color: white;
+          -webkit-box-shadow: 0px 0px 5px #160555;
+                  box-shadow: 0px 0px 5px #160555; }
         .page2 .white-box .about-me .about-left button:hover {
-          -webkit-box-shadow: 2px 2px 5px grey;
-                  box-shadow: 2px 2px 5px grey;
-          position: relative;
-          bottom: 2px;
-          right: 2px; }
+          -webkit-box-shadow: none;
+                  box-shadow: none;
+          position: relative; }
       .page2 .white-box .about-me .about-right {
         width: 60%;
         height: 60%; }
         .page2 .white-box .about-me .about-right p {
-          padding-left: 8%;
+          padding-left: 4%;
           font-weight: bold;
           text-transform: uppercase;
           margin-bottom: 12%; }
@@ -879,7 +900,7 @@ h3 {
           padding: 0;
           margin: 0; }
         .page2 .white-box .about-me .about-right li {
-          font-size: 18px;
+          font-size: 14px;
           margin: 0;
           list-style: none; }
         .page2 .white-box .about-me .about-right ul li::before {
@@ -932,13 +953,13 @@ h3 {
       text-transform: uppercase;
       margin-top: 34px;
       margin-bottom: 44px;
-      color: red; }
+      color: red;
+      -webkit-box-shadow: 0px 0px 5px #fff;
+              box-shadow: 0px 0px 5px #fff; }
     .page3 .my-work .view-site-button:hover {
-      -webkit-box-shadow: 2px 2px 5px grey;
-              box-shadow: 2px 2px 5px grey;
-      position: relative;
-      bottom: 2px;
-      right: 2px; }
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      color: red; }
     .page3 .my-work .prev-button, .page3 .my-work .next-button {
       border-radius: 0;
       border: none;
@@ -1000,14 +1021,14 @@ h3 {
     height: 70%;
     padding-left: 44px; }
     .page4 .what-left p {
-      letter-spacing: 2px;
-      width: 70%; }
+      letter-spacing: 1px;
+      width: 80%; }
   .page4 .what-right {
     width: 50%;
     height: 70%; }
     .page4 .what-right p {
-      width: 70%;
-      letter-spacing: 2px; }
+      width: 80%;
+      letter-spacing: 1px; }
   .page4 .what-cards {
     width: 100%;
     height: 50%;
@@ -1026,8 +1047,8 @@ h3 {
     .page4 .what-cards .card1 {
       -webkit-transition: .5s;
       transition: .5s;
-      padding: 24px 44px 24px 44px;
-      width: 24%;
+      padding: 24px 24px 24px 24px;
+      width: 30%;
       height: 98%;
       border: 1px solid white;
       opacity: .7;
@@ -1044,6 +1065,8 @@ h3 {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; }
+      .page4 .what-cards .card1 p {
+        font-size: 14px; }
       .page4 .what-cards .card1 .card1-image {
         height: 25%;
         width: 28%; }
@@ -1222,7 +1245,7 @@ h3 {
           align-items: center; }
   .page6 .contact-wrap {
     height: 70%;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1235,6 +1258,23 @@ h3 {
             flex-direction: column; }
     .page6 .contact-wrap .contact-me {
       height: 50%;
+      width: 100%;
+      color: white;
+      padding-left: 44px; }
+      .page6 .contact-wrap .contact-me a {
+        color: white;
+        text-decoration: none;
+        text-shadow: 1px 1px 1px blue; }
+      .page6 .contact-wrap .contact-me a:hover {
+        color: rgba(0, 68, 255, 0.63);
+        text-decoration: none;
+        text-shadow: 2px 2px 2px blue; }
+    .page6 .contact-wrap .contact-box {
+      position: absolute;
+      top: 560%;
+      opacity: .4;
+      border: 1px solid white;
+      height: 40%;
       width: 100%; }
     .page6 .contact-wrap .contact-form {
       display: -webkit-box;
@@ -1245,13 +1285,15 @@ h3 {
           -ms-flex-direction: row;
               flex-direction: row;
       height: 50%;
-      width: 100%; }
+      width: 90%;
+      padding: 34px;
+      padding-left: 44px; }
       .page6 .contact-wrap .contact-form p {
         color: white;
         display: inline-block;
         width: 30%;
         margin-right: 24px;
-        opacity: .7; }
+        opacity: .8; }
       .page6 .contact-wrap .contact-form .wpcf7-textarea {
         width: 90%;
         height: 100px; }
@@ -1274,5 +1316,5 @@ h3 {
         -webkit-box-shadow: 2px 2px 5px grey;
                 box-shadow: 2px 2px 5px grey;
         position: relative;
-        bottom: 2px;
+        bottom: 14px;
         right: 2px; }

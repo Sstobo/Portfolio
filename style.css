@@ -682,7 +682,7 @@ h3 {
 .wrapper {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(6, 100vh);
+  grid-template-rows: repeat(6, 900px);
   background: #211a84;
   /* Old browsers */
   /* FF3.6-15 */
@@ -796,7 +796,7 @@ h3 {
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
               flex-direction: row;
-      width: 40%;
+      width: 50%;
       height: 80%;
       margin-top: 6%;
       margin-left: 8%; }
@@ -871,10 +871,10 @@ h3 {
         width: 60%;
         height: 60%; }
         .page2 .white-box .about-me .about-right p {
+          font-size: 18px;
           padding-left: 8%;
           font-weight: bold;
-          text-transform: uppercase;
-          margin-bottom: 12%; }
+          text-transform: uppercase; }
         .page2 .white-box .about-me .about-right ul {
           padding: 0;
           margin: 0; }

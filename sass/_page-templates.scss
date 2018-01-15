@@ -18,7 +18,7 @@ h3 {
 .wrapper {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(6, 100vh);
+  grid-template-rows: repeat(6, 900px);
   background: #211a84; /* Old browsers */
   background: -moz-linear-gradient(-45deg, #211a84 0%, #2239b7 39%, #591ebf 64%, #c90c44 89%); /* FF3.6-15 */
   background: -webkit-linear-gradient(-45deg, #211a84 0%,#2239b7 39%,#591ebf 64%,#c90c44 89%); /* Chrome10-25,Safari5.1-6 */
@@ -111,7 +111,7 @@ h3 {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        width: 40%;
+        width: 50%;
         height: 80%;
         margin-top: 6%;
         margin-left: 8%;
@@ -132,6 +132,7 @@ h3 {
           h3 {
             text-transform: uppercase;
             letter-spacing: 2px;
+           
           }
           p {
             font-weight: bold;
@@ -191,10 +192,11 @@ h3 {
           width: 60%;
           height: 60%;
           p {
+            font-size: 18px;
             padding-left: 8%;
             font-weight: bold;
             text-transform: uppercase;
-            margin-bottom: 12%;
+            
           }
           ul {
             padding: 0;

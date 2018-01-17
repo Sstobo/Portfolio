@@ -13,23 +13,24 @@ get_header(); ?>
 		<div class="wrapper">
 				<div class="page1">
 					<div class="header">
-						<div class="logo">Under Construction</div>
+						<div class="logo"><img class="image-white" src="<?php echo get_template_directory_uri(); ?>/images/sean-logo.png"></div>
 						<div class="menu"></div>
 					</div>
 					<div class="title">
 						<p> Nice to meet you, I'm </p>
 						<h1> Sean Stobo</h1>
 						<p> A full stack web and app developer based out of Vancouver, Canada. </p>
-						<button class="title-button"> Lets Talk</button>
-					</div>
-					
+						<a href="mailto:seanstobo@gmail.com?Subject=Hello" target="_top"><button class="title-button"> Lets Talk</button></a>
+					</div>	
+					<a class="scroll-icon" href="#scroll"><img class="image-scroll" src="<?php echo get_template_directory_uri(); ?>/images/sean-mouse-scroll.png"></a>		
+					<p> Scroll Down </p>
 				</div>
 
 				<div class="page2">
 					<div class="white-box">
 						<div class="pic">
 							
-						<div class="profile-image"></div>
+						<div class="profile-image" id="scroll"></div>
 							<div class="profile-image-box"></div>
 						</div>
 						<div class="about-me">
@@ -38,45 +39,56 @@ get_header(); ?>
 								<p> I'm a dynamic and driven full stack front and back end developer. I'm a motivated and personable individual, who geniunly enjoys bringing projects to life with clean efficient code.
 								
 							</div>
-							<div class="about-left">
+							<div class="about-left" >
 								<p> Proficiencys </p>
 								<ul> 
 									<li> React </li>
 									<li> HTML </li>
 									<li> CSS </li>
 									<li> Javascript </li>
-									<li> Jquery </li>
-									<li> Python </li>
+									<li> Jquery </li>									
 									<li> PHP </li>
 									<li> Sass/Gulp </li>
 								</ul>
-								<button> Lets Talk</button>
+								<a href="mailto:seanstobo@gmail.com?Subject=Hello" target="_top"><button> Lets Talk</button></a>
+								
 							</div>
 							<div class="about-right">
 								<p> What I do </p>
 								<ul> 
-									<li> Create immersive web experiences </li>
-									<li> App development for Android and iOS</li>
-									<li> Wordpress web development </li>
-									<li> Work collaborativly in a team environment </li>
-									<li> Provide a positive and energetic culture fit </li>
+									<li> I create immersive web experiences. </li>
+									<li> I develop applications for Android and iOS.</li>
+									<li> I am experienced in Wordpress web development. </li>
+									<li> I love to work collaborativly in a team environment. </li>
+									<li> I provide a positive and energetic culture fit. </li>
+									<li>Earls Restaurant corporate trainer and recruiter </li>
+									
+									<li>Mentorship and personal/ professional development. </li>
+
 								</ul>
 							</div>
 						</div>
 					</div>
+					
 				</div>
-
 				
 				<div class="page3">
 					<div class="my-work">
 					<h2> My Work </h2>
+					<div class="nexus-text">
 					<h4> Nexus Intercambio</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+					<p>Nexus is a Worpress site built for Brazillian students looking for a place to study in Canada.</p>
+</div>
 					<button class="view-site-button"> View Site </button></br>
 					<button class="prev-button"><- Prev</button></br>
 					<button class="next-button">Next  -></button>
 					</div>
-					<div class="my-work-pics"></div>
+					<div class="my-work-pics">
+						<div class="work-box"></div>
+						<div class="nexus"></div>
+						<div class="work-pic">			
+						</div>
+					</div>
 				</div>
 
 				<div class="page4">
@@ -86,12 +98,12 @@ get_header(); ?>
 						<h2> What Im About </h2>
 						</div>
 						<div class="what-left">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+							<p>
 							</p>
 						</div>
 						<div class="what-right">
 							<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+							
 							</p>
 						</div>
 					</div>
@@ -137,9 +149,20 @@ get_header(); ?>
 					<div class="education-wrapper">
 					<div class="education-left">
 <h2> My Education</h2>
-<p> Two years ago I was working as an Executive Chef. Now, I am working as a Web and App Developer. Quite a dramatic change, but one of the most rewarding things I have done in my life! I have been fascinated by computer programming since I coded a text based adventure for my younger brothers, in Basic, 20 years ago. This passion has always been there, but has really manifested as something real thanks to my fantastic mentors and instructors at Red Academy. 
-
-<p> At the moment I am focusing on developing my skills with React.js. I have a strong understanding of Python, Javascript, and PHP, and I have a high level of skill in CSS and HTML as well, with a focus on CSS Grid.  I work extremely well with teams, and generate a supportive, fun, and accountable culture around me.</p>
+<p> Two years ago I was working as an Executive Chef. Now, I am working as a Web and App Developer. Quite a dramatic change, but one of the most rewarding things I have done in my life!
+</p>
+<p>
+At the moment I am focusing on developing my skills with React.js. I have a strong understanding of Javascript, and PHP, and I have a high level of skill in CSS and HTML as well, with a focus on CSS Grid.  I work extremely well with teams, and generate a supportive, fun, and accountable culture around me.</p>
+<div class="education-icons">
+	<div class="icon-card">CSS 3<img class="image-white" src="<?php echo get_template_directory_uri(); ?>/images/css3.png"></div>
+	<div class="icon-card">Javascript<img class="image-white" src="<?php echo get_template_directory_uri(); ?>/images/javascript.png"></div>
+	<div class="icon-card">HTML5<img class="image-white" src="<?php echo get_template_directory_uri(); ?>/images/html5.png"></div>
+	<div class="icon-card">PHP<img class="image-white" src="<?php echo get_template_directory_uri(); ?>/images/php.png"></div>
+	<div class="icon-card">WordPress<img class="image-white" src="<?php echo get_template_directory_uri(); ?>/images/wordpress.png"></div>
+	<div class="icon-card">React.js<img class="image-white" src="<?php echo get_template_directory_uri(); ?>/images/react.png"></div>
+	<div class="icon-card">Node.js<img class="image-white" src="<?php echo get_template_directory_uri(); ?>/images/nodejs.png"></div>
+	<div class="icon-card">Jquery<img class="image-white" src="<?php echo get_template_directory_uri(); ?>/images/jquery.png"></div>
+</div>
 
 					</div>
 					<div class="education-right">
@@ -164,14 +187,15 @@ get_header(); ?>
 				</div>
 
 				<div class="page6">
-					<div class="contact-wrap"><div class="contact-box"></div>
-					<div class="contact-me">
+					<div class="contact-wrap">
+						<div class="contact-me">
 						<h2> Lets get in touch! </h2>
 						<p> My email address is <a href="mailto:seanstobo@gmail.com?Subject=Hello" target="_top">seanstobo@gmail.com</a>
+						<p> If you would like to see more, find me on <a href="https://www.linkedin.com/in/sean-stobo-a125558a/" target="_top">Linkedin.com</a>
 					</div>
 					<div class="contact-form">
-					<?php echo do_shortcode( '[contact-form-7 id="4" title="Contact form 1"]' ); ?>
-					</div>
+						<?php echo do_shortcode( '[contact-form-7 id="4" title="Contact form 1"]' ); ?>
+						</div>
 					</div>
 				</div>
 

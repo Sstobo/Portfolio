@@ -663,8 +663,8 @@ object {
   display: block; }
 
 /*--------------------------------------------------------------
-# Page Templates
---------------------------------------------------------------*/
+  # Page Templates
+  --------------------------------------------------------------*/
 p {
   letter-spacing: 1px;
   font-size: 14px;
@@ -684,20 +684,36 @@ h3 {
   min-width: 1040px;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 900px);
-  background: #211a84;
+  background: #001240;
   /* Old browsers */
   /* FF3.6-15 */
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #211a84 0%, #2239b7 39%, #591ebf 64%, #c90c44 89%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#001240), color-stop(34%, #3c1750), color-stop(48%, #3c1750), color-stop(73%, #540507), to(#c11443));
+  background: linear-gradient(to bottom, #001240 0%, #3c1750 34%, #3c1750 48%, #540507 73%, #c11443 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#211a84', endColorstr='#c90c44',GradientType=1 ); }
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001240', endColorstr='#c11443',GradientType=0 );
+  /* IE6-9 */ }
+
+.title-button {
+  border-radius: 0;
+  border: none;
+  padding: 8px;
+  background-color: white;
+  text-shadow: none;
+  width: 124px;
+  text-transform: uppercase;
+  margin-top: 34px;
+  color: red;
+  -webkit-box-shadow: 0px 0px 5px #160555;
+          box-shadow: 0px 0px 5px #160555; }
 
 .title-button:hover {
   color: red;
-  background-color: white !important; }
+  background-color: white !important;
+  -webkit-box-shadow: 0px 0px 5px white;
+          box-shadow: 0px 0px 5px white; }
 
 .page1 {
-  border: 1px solid grey;
   grid-row: 1/2;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -705,7 +721,9 @@ h3 {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  background-image: url("../../images/sean-backgroundlogo.png");
+  background-size: cover; }
   .page1 .header {
     width: 100%;
     height: 10%;
@@ -715,15 +733,18 @@ h3 {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
-            flex-direction: row;
-    background-color: pink; }
+            flex-direction: row; }
     .page1 .header .logo {
+      padding: 14px;
       width: 70%;
-      height: 100%;
-      background-color: white; }
+      height: 100%; }
+      .page1 .header .logo img {
+        height: 60%;
+        margin-left: 8%;
+        margin-top: 1%; }
     .page1 .header .menu {
       width: 30%;
-      background-color: goldenrod; }
+      border: 1px solid white; }
   .page1 .title {
     color: white;
     display: -webkit-box;
@@ -744,9 +765,27 @@ h3 {
       letter-spacing: 8px;
       margin-bottom: 24px;
       font-size: 118px; }
+  .page1 .scroll-icon {
+    margin: 0 auto;
+    margin-top: 44px; }
+  .page1 .image-scroll {
+    margin: 0 auto;
+    margin-top: 5%;
+    height: 30px;
+    width: 30px;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: -webkit-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+    transition: transform .8s ease-in-out, -webkit-transform .8s ease-in-out; }
+  .page1 .image-scroll:hover {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg); }
+  .page1 p {
+    margin: 0 auto;
+    color: white;
+    margin-top: 14px; }
 
 .page2 {
-  border: 1px solid grey;
   grid-row: 2/3;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -834,7 +873,7 @@ h3 {
           margin: 0;
           margin-bottom: 3%; }
       .page2 .white-box .about-me .about-left {
-        width: 40%;
+        width: 30%;
         height: 60%; }
         .page2 .white-box .about-me .about-left p {
           font-weight: bold;
@@ -846,7 +885,8 @@ h3 {
           margin: 0; }
         .page2 .white-box .about-me .about-left li {
           font-size: 14px;
-          list-style: none; }
+          list-style: none;
+          margin: 10px 0; }
         .page2 .white-box .about-me .about-left ul li::before {
           color: red;
           content: "-";
@@ -864,11 +904,11 @@ h3 {
           text-transform: uppercase;
           margin-top: 34px;
           color: white;
-          -webkit-box-shadow: 0px 0px 5px #160555;
-                  box-shadow: 0px 0px 5px #160555; }
-        .page2 .white-box .about-me .about-left button:hover {
           -webkit-box-shadow: none;
-                  box-shadow: none;
+                  box-shadow: none; }
+        .page2 .white-box .about-me .about-left button:hover {
+          -webkit-box-shadow: 0px 0px 5px #160555;
+                  box-shadow: 0px 0px 5px #160555;
           position: relative; }
       .page2 .white-box .about-me .about-right {
         width: 60%;
@@ -879,11 +919,12 @@ h3 {
           font-weight: bold;
           text-transform: uppercase; }
         .page2 .white-box .about-me .about-right ul {
-          padding: 0;
+          padding: 0 20px;
           margin: 0; }
         .page2 .white-box .about-me .about-right li {
           font-size: 14px;
-          margin: 0;
+          width: 350px;
+          margin: 10px 0;
           list-style: none; }
         .page2 .white-box .about-me .about-right ul li::before {
           color: red;
@@ -894,7 +935,6 @@ h3 {
           top: 0em; }
 
 .page3 {
-  border: 1px solid grey;
   grid-row: 3/4;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -935,12 +975,10 @@ h3 {
       text-transform: uppercase;
       margin-top: 34px;
       margin-bottom: 44px;
-      color: red;
-      -webkit-box-shadow: 0px 0px 5px #fff;
-              box-shadow: 0px 0px 5px #fff; }
+      color: red; }
     .page3 .my-work .view-site-button:hover {
-      -webkit-box-shadow: none;
-              box-shadow: none;
+      -webkit-box-shadow: 0px 0px 5px #fff;
+              box-shadow: 0px 0px 5px #fff;
       color: red; }
     .page3 .my-work .prev-button, .page3 .my-work .next-button {
       border-radius: 0;
@@ -957,13 +995,37 @@ h3 {
       text-transform: uppercase;
       margin-bottom: 12px; }
   .page3 .my-work-pics {
-    width: 60%;
-    height: 75%;
-    background: grey;
-    margin-top: 4%; }
+    width: 70%;
+    height: 85%;
+    margin-top: 12%;
+    margin-left: 6%;
+    margin-right: 4%;
+    position: relative; }
+    .page3 .my-work-pics .work-box {
+      height: 90%;
+      opacity: .6;
+      width: 70%;
+      position: relative;
+      left: 34%;
+      bottom: 8%;
+      z-index: 1;
+      background: white; }
+    .page3 .my-work-pics .nexus {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      height: 100%;
+      width: 100%;
+      z-index: 2;
+      position: relative;
+      bottom: 92%;
+      background-image: url("../../images/portfolio-nexus.png");
+      background-size: contain;
+      background-repeat: no-repeat; }
+    .page3 .my-work-pics .aloha {
+      display: hide; }
 
 .page4 {
-  border: 1px solid grey;
   grid-row: 4/5;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1013,7 +1075,7 @@ h3 {
       letter-spacing: 1px; }
   .page4 .what-cards {
     width: 100%;
-    height: 50%;
+    height: 60%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1027,9 +1089,10 @@ h3 {
     -ms-flex-pack: distribute;
         justify-content: space-around; }
     .page4 .what-cards .card1 {
+      text-align: center;
       -webkit-transition: .5s;
       transition: .5s;
-      padding: 24px 24px 24px 24px;
+      padding: 44px 24px;
       width: 30%;
       height: 98%;
       border: 1px solid white;
@@ -1043,15 +1106,13 @@ h3 {
               flex-direction: column;
       -webkit-box-align: center;
           -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; }
+              align-items: center; }
       .page4 .what-cards .card1 p {
         font-size: 14px; }
       .page4 .what-cards .card1 .card1-image {
         height: 25%;
-        width: 28%; }
+        width: 28%;
+        margin-bottom: 34px; }
         .page4 .what-cards .card1 .card1-image .image-white {
           display: block; }
         .page4 .what-cards .card1 .card1-image .image-black {
@@ -1071,10 +1132,11 @@ h3 {
       .page4 .what-cards .card1:hover .image-black {
         display: block; }
     .page4 .what-cards .card2 {
+      text-align: center;
       -webkit-transition: .5s;
       transition: .5s;
-      padding: 24px 44px 24px 44px;
-      width: 24%;
+      padding: 44px 24px;
+      width: 30%;
       height: 98%;
       border: 1px solid white;
       opacity: .7;
@@ -1087,11 +1149,11 @@ h3 {
               flex-direction: column;
       -webkit-box-align: center;
           -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; }
+              align-items: center; }
+      .page4 .what-cards .card2 p {
+        font-size: 14px; }
       .page4 .what-cards .card2 .card2-image {
+        margin-bottom: 34px;
         height: 25%;
         width: 28%; }
         .page4 .what-cards .card2 .card2-image .image-white {
@@ -1113,10 +1175,11 @@ h3 {
       .page4 .what-cards .card2:hover .image-black {
         display: block; }
     .page4 .what-cards .card3 {
+      text-align: center;
       -webkit-transition: .5s;
       transition: .5s;
-      padding: 24px 44px 24px 44px;
-      width: 24%;
+      padding: 44px 24px;
+      width: 30%;
       height: 98%;
       border: 1px solid white;
       opacity: .7;
@@ -1129,11 +1192,11 @@ h3 {
               flex-direction: column;
       -webkit-box-align: center;
           -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; }
+              align-items: center; }
+      .page4 .what-cards .card3 p {
+        font-size: 14px; }
       .page4 .what-cards .card3 .card3-image {
+        margin-bottom: 34px;
         height: 25%;
         width: 28%; }
         .page4 .what-cards .card3 .card3-image .image-white {
@@ -1172,7 +1235,7 @@ h3 {
       -ms-flex-align: center;
           align-items: center; }
   .page5 .education-wrapper {
-    height: 70%;
+    height: 80%;
     width: 80%;
     margin: 0 auto;
     display: -webkit-box;
@@ -1189,6 +1252,19 @@ h3 {
       height: 100%; }
       .page5 .education-wrapper .education-left p {
         width: 70%; }
+      .page5 .education-wrapper .education-left .education-icons {
+        padding: 24px;
+        text-align: center;
+        font-size: 14px;
+        width: 90%;
+        height: 50%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        position: relative;
+        right: 8%; }
+        .page5 .education-wrapper .education-left .education-icons .icon-card {
+          padding: 8%; }
     .page5 .education-wrapper .education-right {
       border: 1px solid rgba(233, 233, 233, 0.4);
       width: 50%;
@@ -1210,7 +1286,6 @@ h3 {
         top: 0em; }
 
 .page6 {
-  border: 1px solid grey;
   grid-row: 6/7;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1219,13 +1294,14 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  padding-top: 10%; }
   .page6 .contact-wrap {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: space-between;
+        -ms-flex-align: space-between;
+            align-items: space-between;
     height: 70%;
     width: 90%;
     margin: 0 auto;
@@ -1239,8 +1315,8 @@ h3 {
         -ms-flex-direction: column;
             flex-direction: column; }
     .page6 .contact-wrap .contact-me {
-      height: 50%;
-      width: 100%;
+      height: 30%;
+      width: 80%;
       color: white;
       padding-left: 44px; }
       .page6 .contact-wrap .contact-me a {
@@ -1251,13 +1327,6 @@ h3 {
         color: rgba(0, 68, 255, 0.63);
         text-decoration: none;
         text-shadow: 2px 2px 2px blue; }
-    .page6 .contact-wrap .contact-box {
-      position: absolute;
-      top: 560%;
-      opacity: .4;
-      border: 1px solid white;
-      height: 40%;
-      width: 100%; }
     .page6 .contact-wrap .contact-form {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1269,16 +1338,26 @@ h3 {
       height: 50%;
       width: 90%;
       padding: 34px;
-      padding-left: 44px; }
+      padding-left: 24px;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
       .page6 .contact-wrap .contact-form p {
         color: white;
         display: inline-block;
-        width: 30%;
-        margin-right: 24px;
-        opacity: .8; }
+        width: 24%;
+        margin-right: 14px;
+        opacity: .8;
+        margin-bottom: 14px; }
+      .page6 .contact-wrap .contact-form .wpcf7-form-control {
+        width: 100%; }
       .page6 .contact-wrap .contact-form .wpcf7-textarea {
-        width: 90%;
-        height: 100px; }
+        width: 100%;
+        height: 100px;
+        margin-right: 44px; }
       .page6 .contact-wrap .contact-form .wpcf7-submit {
         border-radius: 0;
         border: none;
@@ -1292,11 +1371,10 @@ h3 {
         margin-top: 34px;
         margin-bottom: 44px;
         position: relative;
+        left: 44px;
         bottom: 12px;
         color: red; }
       .page6 .contact-wrap .contact-form .wpcf7-submit:hover {
-        -webkit-box-shadow: 2px 2px 5px grey;
-                box-shadow: 2px 2px 5px grey;
-        position: relative;
-        bottom: 14px;
-        right: 2px; }
+        -webkit-box-shadow: 0 0 5px white;
+                box-shadow: 0 0 5px white;
+        position: relative; }

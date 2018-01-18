@@ -15,14 +15,20 @@ get_header(); ?>
 				<div class="page1">
 					<div class="header">
 						<div class="logo"><img class="image-white" src="<?php echo get_template_directory_uri(); ?>/images/sean-logo.png"></div>
-						<div class="menu">UNDER CONSTRUCTION</div>
+						<div class="menu"></div>
 					</div>
 					<div class="title">
 						<p> Nice to meet you, I'm </p>
 						<h1> Sean Stobo</h1>
-						<p> A full stack web and app developer based out of Vancouver, Canada. </p>
+						<p> A web and app developer based out of Vancouver, Canada. </br>
+						This site is under construction, and not yet optimized for your mobile experience, but please make yourself at home!
+						</p>
 						<a href="mailto:seanstobo@gmail.com?Subject=Hello" target="_top"><button class="title-button"> Lets Talk</button></a>
+						<a href="Https://www.linkedin.com/in/sean-stobo-a125558a/" target="_top"><button class="title-button"> Linked In </button></a>
+						<a href="https://github.com/sstobo" target="_top"><button class="title-button"> My GitHub</button></a>
+						
 					</div>	
+
 					<a class="scroll-icon" href="#page2"><img class="image-scroll" src="<?php echo get_template_directory_uri(); ?>/images/sean-mouse-scroll.png"></a>		
 					<p> Scroll Down </p>
 				</div>
@@ -36,7 +42,7 @@ get_header(); ?>
 						<div class="about-me">
 							<div class="about-me-intro">
 								<h2> About Me </h2>
-								<p> I'm a dynamic and driven full stack front and back end developer. I'm a motivated and personable individual, who geniunly enjoys bringing projects to life with clean efficient code.
+								<p> I'm a dynamic and driven front and back end developer. I'm a motivated and personable individual, who geniunly enjoys bringing projects to life with clean efficient code.
 								
 							</div>
 							<div class="about-left" >
@@ -62,7 +68,6 @@ get_header(); ?>
 									<li> I love to work collaborativly in a team environment. </li>
 									<li> I provide a positive and energetic culture fit. </li>
 									<li>Earls Restaurant corporate trainer and recruiter </li>
-									
 									<li>Mentorship and personal/ professional development. </li>
 
 								</ul>
@@ -92,6 +97,7 @@ get_header(); ?>
 						</div>
 					</div>
 				</div>
+
 <!-- what im about -->
 				<div class="page4">
 				<a class="scroll-icon" href="#page4"><img class="image-scroll" src="<?php echo get_template_directory_uri(); ?>/images/sean-mouse-scroll.png"></a>		

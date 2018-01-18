@@ -16,6 +16,7 @@
     text-transform: uppercase;
     letter-spacing: 2px;
   } 
+  
   .wrapper {
     display: grid;
     min-width: 1040px;
@@ -270,6 +271,27 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001240', end
       grid-row: 3/4;
       display: flex;
       flex-direction: row;
+      .scroll-icon { 
+        position: relative;
+        left: 50%;
+        bottom: 66px;
+        background: purple;
+        box-shadow: 0 0 8px purple;
+        border-radius: 20px;
+        height: 30px;
+      }
+      .image-scroll {
+        margin: 0 auto;
+        margin-top: 5%;
+        height: 30px;
+        width: 30px;
+        -webkit-transition: -webkit-transform .8s ease-in-out;
+        transition:         transform .8s ease-in-out;
+      }
+      .image-scroll:hover {
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
+      }
         .my-work {
           width: 40%;
           height: 75%;
@@ -365,6 +387,26 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001240', end
     flex-wrap: wrap;
     flex-direction: row;
     color: white;
+    .scroll-icon { 
+      position: relative;
+      left: 50%;
+      bottom: 126px;
+      border-radius: 20px;
+      height: 30px;
+      z-index: 1000;
+    }
+    .image-scroll {
+      margin: 0 auto;
+      margin-top: 5%;
+      height: 30px;
+      width: 30px;
+      -webkit-transition: -webkit-transform .8s ease-in-out;
+      transition:         transform .8s ease-in-out;
+    }
+    .image-scroll:hover {
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg);
+    }
     .what-im-about {
     height: 30%;
     width: 100%;
@@ -546,6 +588,26 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001240', end
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    .scroll-icon { 
+      position: relative;
+      left: 50%;
+      bottom: 46%;
+      border-radius: 20px;
+      height: 30px;
+      z-index: 1000;
+    }
+    .image-scroll {
+      margin: 0 auto;
+      margin-top: 5%;
+      height: 30px;
+      width: 30px;
+      -webkit-transition: -webkit-transform .8s ease-in-out;
+      transition:         transform .8s ease-in-out;
+    }
+    .image-scroll:hover {
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg);
+    }
     .education-wrapper {
       height: 80%;
       width: 80%;

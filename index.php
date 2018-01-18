@@ -11,10 +11,11 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 		<div class="background">
 		<div class="wrapper">
+<!-- Title Page -->
 				<div class="page1">
 					<div class="header">
 						<div class="logo"><img class="image-white" src="<?php echo get_template_directory_uri(); ?>/images/sean-logo.png"></div>
-						<div class="menu"></div>
+						<div class="menu">UNDER CONSTRUCTION</div>
 					</div>
 					<div class="title">
 						<p> Nice to meet you, I'm </p>
@@ -22,14 +23,13 @@ get_header(); ?>
 						<p> A full stack web and app developer based out of Vancouver, Canada. </p>
 						<a href="mailto:seanstobo@gmail.com?Subject=Hello" target="_top"><button class="title-button"> Lets Talk</button></a>
 					</div>	
-					<a class="scroll-icon" href="#scroll"><img class="image-scroll" src="<?php echo get_template_directory_uri(); ?>/images/sean-mouse-scroll.png"></a>		
+					<a class="scroll-icon" href="#page2"><img class="image-scroll" src="<?php echo get_template_directory_uri(); ?>/images/sean-mouse-scroll.png"></a>		
 					<p> Scroll Down </p>
 				</div>
-
+<!-- Profile Page -->
 				<div class="page2">
-					<div class="white-box">
+					<div class="white-box" id="page2">
 						<div class="pic">
-							
 						<div class="profile-image" id="scroll"></div>
 							<div class="profile-image-box"></div>
 						</div>
@@ -72,14 +72,16 @@ get_header(); ?>
 					
 				</div>
 				
+<!-- Portfolio page -->
 				<div class="page3">
-					<div class="my-work">
+				<a class="scroll-icon" href="#page3"><img class="image-scroll" src="<?php echo get_template_directory_uri(); ?>/images/sean-mouse-scroll.png"></a>		
+					<div class="my-work" id="page3">
 					<h2> My Work </h2>
 					<div class="nexus-text">
 					<h4> Nexus Intercambio</h4>
 					<p>Nexus is a Worpress site built for Brazillian students looking for a place to study in Canada.</p>
-</div>
-					<button class="view-site-button"> View Site </button></br>
+	</div>
+					<a href="http://nexus.van.cp.academy.red/"><button class="view-site-button"> View Site </button></a></br>
 					<button class="prev-button"><- Prev</button></br>
 					<button class="next-button">Next  -></button>
 					</div>
@@ -90,19 +92,20 @@ get_header(); ?>
 						</div>
 					</div>
 				</div>
-
+<!-- what im about -->
 				<div class="page4">
+				<a class="scroll-icon" href="#page4"><img class="image-scroll" src="<?php echo get_template_directory_uri(); ?>/images/sean-mouse-scroll.png"></a>		
 					<div class="what-im-about">
 					
 						<div class="what-title">
-						<h2> What Im About </h2>
+						<h2 id="page4"> What Im About </h2>
 						</div>
 						<div class="what-left">
-							<p>
+							<p>I come from a background in the culinary arts. My experience is in leading large teams and building business and turning flagging restaurants around in sales, profit, and staff engagement.
 							</p>
 						</div>
 						<div class="what-right">
-							<p>
+							<p>I am hoping to apply my learnings to the tech sector. I love my life and try to pack every waking hour of the day with learning, activities and challenges. I have a good mind for systems, and a very positive disposition.
 							
 							</p>
 						</div>
@@ -144,25 +147,26 @@ get_header(); ?>
 						</div>
 					</div>
 				</div>
-
+<!-- Education -->
 				<div class="page5">
-					<div class="education-wrapper">
+				<a class="scroll-icon" href="#page5"><img class="image-scroll" src="<?php echo get_template_directory_uri(); ?>/images/sean-mouse-scroll.png"></a>		
+					<div class="education-wrapper" id="page5">
 					<div class="education-left">
-<h2> My Education</h2>
-<p> Two years ago I was working as an Executive Chef. Now, I am working as a Web and App Developer. Quite a dramatic change, but one of the most rewarding things I have done in my life!
-</p>
-<p>
-At the moment I am focusing on developing my skills with React.js. I have a strong understanding of Javascript, and PHP, and I have a high level of skill in CSS and HTML as well, with a focus on CSS Grid.  I work extremely well with teams, and generate a supportive, fun, and accountable culture around me.</p>
-<div class="education-icons">
-	<div class="icon-card">CSS 3<img class="image-white" src="<?php echo get_template_directory_uri(); ?>/images/css3.png"></div>
-	<div class="icon-card">Javascript<img class="image-white" src="<?php echo get_template_directory_uri(); ?>/images/javascript.png"></div>
-	<div class="icon-card">HTML5<img class="image-white" src="<?php echo get_template_directory_uri(); ?>/images/html5.png"></div>
-	<div class="icon-card">PHP<img class="image-white" src="<?php echo get_template_directory_uri(); ?>/images/php.png"></div>
-	<div class="icon-card">WordPress<img class="image-white" src="<?php echo get_template_directory_uri(); ?>/images/wordpress.png"></div>
-	<div class="icon-card">React.js<img class="image-white" src="<?php echo get_template_directory_uri(); ?>/images/react.png"></div>
-	<div class="icon-card">Node.js<img class="image-white" src="<?php echo get_template_directory_uri(); ?>/images/nodejs.png"></div>
-	<div class="icon-card">Jquery<img class="image-white" src="<?php echo get_template_directory_uri(); ?>/images/jquery.png"></div>
-</div>
+					<h2> My Education</h2>
+					<p> Two years ago I was working as an Executive Chef. Now, I am working as a Web and App Developer. Quite a dramatic change, but one of the most rewarding things I have done in my life!
+					</p>
+					<p>
+					At the moment I am focusing on developing my skills with React.js. I have a strong understanding of Javascript, and PHP, and I have a high level of skill in CSS and HTML as well, with a focus on CSS Grid.  I work extremely well with teams, and generate a supportive, fun, and accountable culture around me.</p>
+					<div class="education-icons">
+						<div class="icon-card">CSS 3<img class="image-white" src="<?php echo get_template_directory_uri(); ?>/images/css3.png"></div>
+						<div class="icon-card">Javascript<img class="image-white" src="<?php echo get_template_directory_uri(); ?>/images/javascript.png"></div>
+						<div class="icon-card">HTML5<img class="image-white" src="<?php echo get_template_directory_uri(); ?>/images/html5.png"></div>
+						<div class="icon-card">PHP<img class="image-white" src="<?php echo get_template_directory_uri(); ?>/images/php.png"></div>
+						<div class="icon-card">WordPress<img class="image-white" src="<?php echo get_template_directory_uri(); ?>/images/wordpress.png"></div>
+						<div class="icon-card">React.js<img class="image-white" src="<?php echo get_template_directory_uri(); ?>/images/react.png"></div>
+						<div class="icon-card">Node.js<img class="image-white" src="<?php echo get_template_directory_uri(); ?>/images/nodejs.png"></div>
+						<div class="icon-card">Jquery<img class="image-white" src="<?php echo get_template_directory_uri(); ?>/images/jquery.png"></div>
+					</div>
 
 					</div>
 					<div class="education-right">
@@ -185,8 +189,10 @@ At the moment I am focusing on developing my skills with React.js. I have a stro
 					</div>
 					</div>
 				</div>
+<!-- Contact  -->
 
 				<div class="page6">
+				
 					<div class="contact-wrap">
 						<div class="contact-me">
 						<h2> Lets get in touch! </h2>
@@ -205,4 +211,4 @@ At the moment I am focusing on developing my skills with React.js. I have a stro
 	</div><!-- #primary -->
 
 
-<?php get_footer(); ?>
+	<?php get_footer(); ?>

@@ -23,9 +23,9 @@ get_header(); ?>
 						<p> A web and app developer based out of Vancouver, Canada. </br>
 						This site is under construction, and not yet optimized for your mobile experience, but please make yourself at home!
 						</p>
-						<a href="mailto:seanstobo@gmail.com?Subject=Hello" target="_top"><button class="title-button"> Lets Talk</button></a>
-						<a href="Https://www.linkedin.com/in/sean-stobo-a125558a/" target="_top"><button class="title-button"> Linked In </button></a>
-						<a href="https://github.com/sstobo" target="_top"><button class="title-button"> My GitHub</button></a>
+						<a href="mailto:seanstobo@gmail.com?Subject=Hello" target="_blank"><button class="title-button"> Lets Talk</button></a>
+						<a href="Https://www.linkedin.com/in/sean-stobo-a125558a/" target="_blank"><button class="title-button"> Linked In </button></a>
+						<a href="https://github.com/sstobo" target="_blank"><button class="title-button"> My GitHub</button></a>
 						
 					</div>	
 

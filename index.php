@@ -112,7 +112,7 @@ get_header(); ?>
 								</br>
 								<h4> Instanews</h4>
 								<p>This program is a single page web application. It uses the New York Time API to fetch and filter news stories.</p>
-								<a href="hhttps://sstobo.github.io/instanews-webpack/">
+								<a href="https://sstobo.github.io/instanews-webpack/">
 									<button class="view-site-button"> View Site </button>
 								</a>
 								</br>

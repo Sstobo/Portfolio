@@ -707,15 +707,15 @@ li {
   width: 124px;
   text-transform: uppercase;
   margin-top: 34px;
-  color: red;
+  color: #c11f1f;
   -webkit-box-shadow: 0px 0px 5px #160555;
           box-shadow: 0px 0px 5px #160555; }
 
 .title-button:hover {
-  color: red;
+  color: #ff2828;
   background-color: white !important;
-  -webkit-box-shadow: 0px 0px 5px white;
-          box-shadow: 0px 0px 5px white; }
+  -webkit-box-shadow: 0px 0px 8px white;
+          box-shadow: 0px 0px 8px white; }
 
 .page1 {
   grid-row: 1/2;
@@ -968,9 +968,9 @@ li {
     position: relative;
     left: 50%;
     bottom: 66px;
-    background: purple;
-    -webkit-box-shadow: 0 0 8px purple;
-            box-shadow: 0 0 8px purple;
+    background: rgba(128, 0, 128, 0.535);
+    -webkit-box-shadow: 0 0 18px rgba(128, 0, 128, 0.83);
+            box-shadow: 0 0 18px rgba(128, 0, 128, 0.83);
     border-radius: 20px;
     height: 30px; }
   .page3 .image-scroll {
@@ -996,15 +996,16 @@ li {
       text-transform: uppercase;
       letter-spacing: 4px;
       font-size: 48px;
-      margin-bottom: 24px; }
+      margin-bottom: 14px; }
     .page3 .my-work h4 {
       text-transform: uppercase;
       letter-spacing: 4px;
-      margin-bottom: 44px; }
+      margin-bottom: 24px; }
     .page3 .my-work p {
       width: 80%;
       line-height: 28px;
-      font-size: 14px; }
+      font-size: 14px;
+      border-bottom: 1px solid rgba(185, 185, 185, 0.5); }
     .page3 .my-work .view-site-button {
       border-radius: 0;
       border: none;
@@ -1015,8 +1016,8 @@ li {
       text-shadow: none;
       width: 124px;
       text-transform: uppercase;
-      margin-top: 34px;
-      margin-bottom: 44px;
+      margin-top: 14px;
+      margin-bottom: 14px;
       color: red; }
     .page3 .my-work .view-site-button:hover {
       -webkit-box-shadow: 0px 0px 5px #fff;
@@ -1373,6 +1374,8 @@ li {
         top: 0em; }
 
 .page6 {
+  background-image: url("../../images/sean-backgroundlogo.png");
+  background-size: cover;
   grid-row: 6/7;
   display: none;
   -webkit-box-orient: vertical;
@@ -1482,3 +1485,9 @@ li {
         margin: 0;
         border: none;
         padding: 0; }
+  .page6 .copyright {
+    color: white;
+    opacity: .8;
+    margin: 0 auto;
+    position: relative;
+    top: 18%; }

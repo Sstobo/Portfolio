@@ -32,7 +32,6 @@ get_header(); ?>
 					<a class="scroll-icon" href="#page2"><img class="image-scroll" src="<?php echo get_template_directory_uri(); ?>/images/sean-mouse-scroll.png"></a>		
 					<p> Scroll Down </p>
 				</div>
-<!-- Profile Page -->
 			
 					<!-- Profile Page -->
 					<div class="page2">
